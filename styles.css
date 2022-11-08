@@ -1,0 +1,132 @@
+@font-face {
+    font-family: Strive;
+    src: url(fonts/ImpactStrive.otf);
+}
+
+h1 {
+    font-weight: lighter;
+}
+h2 {
+    font-weight: lighter;
+}
+html {
+    box-sizing: border-box;
+    font-weight: lighter;
+    scroll-behavior: smooth
+}
+body {
+    
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(211, 211, 211);
+    font-family: Strive;
+    font-size: medium;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px;
+    font-size: large;
+}
+
+.header > ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+    padding: 0;
+}
+
+.header > ul > li > a {
+    border: rgb(39, 37, 37) solid 4px;
+    border-radius: 8px;
+    background-color: rgb(39, 37, 37);
+}
+
+.header > img {
+    height: 100px;
+    width: 500px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.wall-of-text-1 {
+    background-color: #701314;
+    display: flex;
+    color: white;
+    padding-left: 8px;
+}
+
+.wall-of-text-1 > .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 40%;
+    padding: 30px;
+}
+
+.wall-of-text-1 > .left-side > p {
+    font-size: larger;
+}
+.wall-of-text-1 > img {
+    min-width: 60%;
+}
+
+.wall-of-text-2 {
+    color: rgb(175, 14, 14);
+    font-weight: normal;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(39, 37, 37);
+}
+
+.wall-of-text-2 > .images-with-text {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.wall-of-text-2 > .images-with-text > .column {
+    flex-direction: column;
+    max-width: 700px;
+    text-align: center;
+}
+
+.wall-of-text-2 > .images-with-text > .column > img {
+    object-fit: fill;
+    max-width: 100%;
+}
+
+.wall-of-text-3 {
+    background-color: #701314;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.wall-of-text-3 > .battle-type-character-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 30px;
+}
+
+.wall-of-text-3 > .battle-type-character-list > .list > .character-image img {
+    border-radius: 40px;
+    transition: transform .2s;
+}
+
+.wall-of-text-3 > .battle-type-character-list > .list > .character-image img:hover {
+    transform: scale(1.5); 
+}
